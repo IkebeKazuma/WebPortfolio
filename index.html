@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="index_style.css">
+        <script src="js/jQuery/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script> 
+        <title>ポートフォリオ</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+
+    <body style="display: none;">
+        <script>
+        </script>
+
+        <main id="main-frame">
+            <iframe src="pages/about_contact.html" name="main-page" frameborder="0" onload="MainFrameFadeIn(this)">htmlのiframe機能を利用しています。<br>iframe対応のサイトでご覧ください。</iframe>
+        </main>
+
+        <aside id="left-side-menu">
+            <a class="menu" href="pages/about_contact.html" target="main-page">ABOUT</a>
+            <a class="menu" href="pages/works.html" target="main-page">WORKS</a>
+            <!-- <a class="menu" href="pages/about_contact.html" target="main-page">ABOUT</a> -->
+            <!-- <a class="menu" href="pages/about_contact.html" target="main-page">CONTACT</a> -->
+
+            <p class="copyright">
+                ©2023 Ikebe Kazuma
+            </p>
+        </aside>
+    </body>
+
+</html>

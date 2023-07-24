@@ -1,0 +1,25 @@
+* {
+  font-family: serif;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  padding-bottom: 15rem;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+p.profile{
+  padding: 4rem 2rem 0 5rem;
+}
+
+p.contact-field{
+  padding: 0rem 2rem 0 5rem;
+}
