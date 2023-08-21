@@ -15,15 +15,36 @@
 }
 
 body{
-  padding-bottom: 5rem;
+	padding-top: 0;
+	padding-bottom: 5rem;
+
+	height: auto;
 }
 
 #main-frame {	
 	box-sizing: border-box;
-	margin-left: var(--side-menu-width);
-	height: 100%;
 	width: calc(100% - var(--side-menu-width));
+	height: 100%;
 	position: absolute;
+	left: var(--side-menu-width);
+}
+
+#main-frame::after{
+	content: '';
+
+	background-image: linear-gradient(to bottom, white 0%, transparent 5%, transparent 95%, white 100%);
+
+	width: calc(100% - var(--side-menu-width));
+	height: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: var(--side-menu-width);
+
+	z-index: 5;
+
+	pointer-events: none;
 }
 
 #left-side-menu{
